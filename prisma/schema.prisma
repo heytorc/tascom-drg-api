@@ -33,6 +33,6 @@ model Reports {
   total      Int
   data       Json
   created_at DateTime @default(now())
-  created_by User     @relation(fields: [userId], references: [id])
-  userId     Int
+  created_by Int
+  userId     User     @relation(fields: [created_by], references: [id])
 }

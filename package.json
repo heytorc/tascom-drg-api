@@ -11,9 +11,6 @@
     "build": "tsc --project tsconfig.json && tscpaths -p tsconfig.json -s ./src -o ./build",
     "start:prod": "node build/server.js"
   },
-  "prisma": {
-    "seed": "ts-node prisma/seed.ts"
-  },
   "nodemonConfig": {
     "ignore": [
       "**/*.test.ts",
